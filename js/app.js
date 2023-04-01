@@ -65,23 +65,25 @@ function selected(product) {
 let Cookies_get = Cookies.get(`selection`);
 
 
-
-let addition = string + Cookies_get;
-
 product[`target`].getAttribute(`product`);
 
 
     if (product[`target`].getAttribute(`product`) === `squidward`) {
 
 
+        let string = JSON.stringify(squidikarp);
 
-
-
+        let addition = string + Cookies_get;
+    
         Cookies.set(`selection`, addition);
 
     } else if (product[`target`].getAttribute(`product`) === `normal`) {
 
         
+        let string = JSON.stringify(magikarp_normal);
+        
+        let addition = string + Cookies_get;
+
         Cookies.set(`selection`, addition);
         
        
@@ -89,6 +91,10 @@ product[`target`].getAttribute(`product`);
 
     } else if (product[`target`].getAttribute(`product`) === `horizontal`) {
 
+        
+        let string = JSON.stringify(horizontal_magikarp);
+        
+        let addition = string + Cookies_get;
 
         Cookies.set(`selection`, addition);
         
@@ -97,6 +103,10 @@ product[`target`].getAttribute(`product`);
 
 
     } else if (product[`target`].getAttribute(`product`) === `pixelated`) {
+
+        let string = JSON.stringify(pixelated_magikarp);
+        
+        let addition = string + Cookies_get;
 
         Cookies.set(`selection`, addition);
         
@@ -177,3 +187,4 @@ let horzont_string = JSON.stringify(horizontal_magikarp);
 
 
 let pixelated_string = JSON.stringify(pixelated_magikarp);
+
