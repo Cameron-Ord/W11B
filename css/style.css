@@ -36,16 +36,19 @@
   min-height: 80vh;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   display: grid;
+  width: 100%;
   align-items: center;
   justify-items: center;
 }
 #page_main > #main_section {
+  width: 100%;
   display: grid;
   margin-bottom: 50px;
   align-items: center;
   justify-items: center;
 }
 #page_main > #main_section > article {
+  width: 100%;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -59,7 +62,7 @@
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-rows: 125px 125px 70px 70px 70px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
 }
 #page_main > #main_section > article > .main_span > p {
@@ -70,7 +73,8 @@
   border-radius: 50%;
   padding: 25px;
   background-color: #EAD2AC;
-  width: 25%;
+  height: 70%;
+  width: 35%;
 }
 
 /*# sourceMappingURL=style.css.map */

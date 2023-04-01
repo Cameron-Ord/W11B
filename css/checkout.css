@@ -32,13 +32,16 @@
 }
 
 #page_main {
+  background-color: #D1DEDE;
   display: grid;
+  width: 100%;
   min-height: 80vh;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
   justify-items: center;
 }
 #page_main > #main_section {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -46,13 +49,26 @@
 }
 #page_main > #main_section > article {
   display: grid;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  width: 100%;
 }
 #page_main > #main_section > article > .main_span {
-  margin-top: 50px;
+  width: 80%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #1D201F;
+  color: #EAD2AC;
+  border-radius: 25px;
   display: grid;
   justify-items: center;
   align-items: center;
   text-align: center;
+}
+#page_main > #main_section > article > .main_span > .magi {
+  align-items: center;
+  text-align: center;
+  width: 50%;
 }
 #page_main > #main_section > article > .main_span > p {
   width: 60%;

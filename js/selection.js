@@ -23,7 +23,7 @@ if(chosen_products === undefined){
         
         <h1>${parse_json[counter][`name`]}</h1>
     
-        <img src="${parse_json[counter][`image_url`]}" width="100px" height="150px">
+        <img class="magi" src="${parse_json[counter][`image_url`]}">
         
         <p>${parse_json[counter][`description`]}</p>
         
