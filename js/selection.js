@@ -1,10 +1,12 @@
 
 //these variables grab the cookies `selection` then parse the json data stored in the cookie//
 
-let get_cookie = Cookies.get(`selection`);
-let parse_json = JSON.parse(get_cookie);
-let chosen_products = Cookies.get(`selection`);
 
+let get_cookie = Cookies.get(`selection`);
+
+let parse_the_json = JSON.parse(get_cookie);
+
+let chosen_products = Cookies.get(`selection`);
 
 //this if statement injects tags based on your cookies//
 
@@ -19,7 +21,7 @@ if (chosen_products === undefined) {
 
     let product_article = document.querySelector(`#main_section`);
 
-    for (let counter = 0; counter < chosen_products.length; counter = counter + 1) {
+    for (let counter = 0; counter < parse_the_json.length; counter = counter + 1) {
 
 
         product_article.insertAdjacentHTML(`beforeend`,
@@ -27,13 +29,13 @@ if (chosen_products === undefined) {
             `<article>
         <span class="main_span">
         
-        <h3>${parse_json[counter][`name`]}</h3>
+        <h3>${parse_the_json[counter][`name`]}</h3>
     
-        <img class="magi" src="${parse_json[counter][`image_url`]}">
+        <img class="magi" src="${parse_the_json[counter][`image_url`]}">
         
-        <p>${parse_json[counter][`description`]}</p>
+        <p>${parse_the_json[counter][`description`]}</p>
         
-        <p>${parse_json[counter][`price`]}</p>
+        <p>${parse_the_json[counter][`price`]}</p>
         
         </span>
         </article>
@@ -46,3 +48,4 @@ if (chosen_products === undefined) {
 
     }
 };
+
