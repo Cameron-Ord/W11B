@@ -33,11 +33,10 @@
 #page_main > #main_section {
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #page_main > #main_section > article {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #page_main > #main_section > article > .main_span {
   margin-top: 25px;

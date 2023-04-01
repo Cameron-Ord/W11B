@@ -25,11 +25,11 @@ justify-items: center;
 >#main_section{
 display: grid;
 place-items: center;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 
 >article{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+
     >.main_span{
         margin-top: 25px;
         
