@@ -16,14 +16,15 @@ if (chosen_products === undefined) {
 
 } else {
 
-    //an else if statement looping through all the selected products and displaying them//
+    //an else statement looping through all the selected products and displaying them//
 
     let product_article = document.querySelector(`#main_section`);
+    
+    let parse_the_json = JSON.parse(get_cookie);
 
     for (let counter = 0; counter < parse_the_json.length; counter = counter + 1) {
 
 
-        let parse_the_json = JSON.parse(get_cookie);
 
         product_article.insertAdjacentHTML(`beforeend`,
 
