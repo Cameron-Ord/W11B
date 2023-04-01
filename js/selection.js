@@ -17,11 +17,10 @@ if(chosen_products === undefined){
 
         product_article.insertAdjacentHTML(`beforeend`, 
         
-        `
-        <article>
+        `<article>
         <span class="main_span">
         
-        <h1>${parse_json[counter][`name`]}</h1>
+        <h3>${parse_json[counter][`name`]}</h3>
     
         <img class="magi" src="${parse_json[counter][`image_url`]}">
         
