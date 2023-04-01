@@ -215,7 +215,8 @@ for (let counter = 0; counter < products.length; counter = counter + 1) {
   
   </article>`);
 
-}
+};
+
 //the event listener for all the buttons//
 
 let product_choice = document.querySelectorAll(`.clickme`);
