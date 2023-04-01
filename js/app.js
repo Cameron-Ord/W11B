@@ -12,7 +12,8 @@ let products = [
 
         price: `$500`,
 
-        image_url: `/images/squidward.jpg`,
+image_url: `/images/squidward.jpg`,
+
 
         description: `a horrible byproduct created from the misuse of mutagen`
 
@@ -199,13 +200,16 @@ product_article.insertAdjacentHTML(`beforeend`,
 `<article>
   <span class="main_span">
   <h3>${products[counter][`name`]}</h3>
-  <img class="magikarps" src="${products[counter][`image_url`]}">
+  <img class="clickme" src="${products[counter][`image_url`]}">
   <p>${products[counter][`price`]}</p>
   <p>${products[counter][`description`]}</p>
   <button class="clickme"
   product_name="${products[counter][`name`]}"
   product_desc="${products[counter][`description`]}"
   product_price="${products[counter][`price`]}"
+  product_image="${products[counter][`image_url`]}"
+
+
   >ADD TO CART</button>
   </span>
   

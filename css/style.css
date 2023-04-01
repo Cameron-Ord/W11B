@@ -44,7 +44,7 @@
   justify-items: center;
   display: grid;
 }
-#page_main > #main_section > article > .main_span > .magikarps {
+#page_main > #main_section > article > .main_span > .clickme {
   width: 25%;
 }
 
