@@ -200,7 +200,7 @@ product_article.insertAdjacentHTML(`beforeend`,
 `<article>
   <span class="main_span">
   <h3>${products[counter][`name`]}</h3>
-  <img class="clickme" src="${products[counter][`image_url`]}">
+  <img class="magi" src="${products[counter][`image_url`]}">
   <p>${products[counter][`price`]}</p>
   <p>${products[counter][`description`]}</p>
   <button class="clickme"

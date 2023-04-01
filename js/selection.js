@@ -19,6 +19,7 @@ if(chosen_products === undefined){
         
         `
         <article>
+        <span class="main_span">
         
         <h1>${parse_json[counter][`name`]}</h1>
     
@@ -28,7 +29,7 @@ if(chosen_products === undefined){
         
         <p>${parse_json[counter][`price`]}</p>
         
-        
+        </span>
         </article>
         
         
