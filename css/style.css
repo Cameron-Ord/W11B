@@ -10,6 +10,14 @@
   justify-items: center;
 }
 
+#page_footer {
+  min-height: 10vh;
+  display: grid;
+}
+#page_footer > .footer_span {
+  display: grid;
+}
+
 * {
   margin: 0px;
   padding: 0px;
