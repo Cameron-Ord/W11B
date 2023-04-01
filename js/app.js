@@ -3,7 +3,7 @@
 //the array of objects that will be used//
 
 let products = [
-   
+
     {
 
 
@@ -12,7 +12,7 @@ let products = [
 
         price: `$500`,
 
-image_url: `/images/squidward.jpg`,
+        image_url: `/images/squidward.jpg`,
 
 
         description: `a horrible byproduct created from the misuse of mutagen`
@@ -174,30 +174,30 @@ let cart = [];
 function selected(products) {
 
 
-let product = {
+    let product = {
 
-name: `${products[`target`].getAttribute(`product_name`)}`,
-price: `${products[`target`].getAttribute(`product_price`)}`,
-image_url: `${products[`target`].getAttribute(`product_image`)}`,
-description: `${products[`target`].getAttribute(`product_desc`)}`,
+        name: `${products[`target`].getAttribute(`product_name`)}`,
+        price: `${products[`target`].getAttribute(`product_price`)}`,
+        image_url: `${products[`target`].getAttribute(`product_image`)}`,
+        description: `${products[`target`].getAttribute(`product_desc`)}`,
 
-}
+    }
 
-cart.push(product);
-json = JSON.stringify(cart);
-Cookies.set(`selection`, json);
+    cart.push(product);
+    json = JSON.stringify(cart);
+    Cookies.set(`selection`, json);
 
-//pushes the object onto the cart array, and save it as a cookie//
+    //pushes the object onto the cart array, and save it as a cookie//
 };
 
 
 let product_article = document.querySelector(`#main_section`);
 
-for(let counter = 0; counter < products.length; counter = counter +1){
-//injects products onto the page//
-product_article.insertAdjacentHTML(`beforeend`, 
+for (let counter = 0; counter < products.length; counter = counter + 1) {
+    //injects products onto the page//
+    product_article.insertAdjacentHTML(`beforeend`,
 
-`<article>
+        `<article>
   <span class="main_span">
   <h3>${products[counter][`name`]}</h3>
   <img class="magi" src="${products[counter][`image_url`]}">

@@ -25,14 +25,14 @@ body {
     justify-items: center;
 
     >#main_section {
- 
+
         width: 100%;
         display: grid;
-   
+
         align-items: center;
         justify-items: center;
 
-        >#main_header_text{
+        >#main_header_text {
 
             display: grid;
 
@@ -42,18 +42,18 @@ body {
 
             align-items: center;
 
-            
-            text-align: center;
-            
 
-            >h1{
+            text-align: center;
+
+
+            >h1 {
 
 
                 margin-bottom: 25px;
                 font-size: 1.6em;
             }
         }
-        
+
 
         >article {
 
@@ -63,6 +63,7 @@ body {
 
             align-items: center;
             justify-items: center;
+
             >.main_span {
 
                 color: #EAD2AC;
@@ -82,12 +83,10 @@ body {
 
 
 
-                >.clickme{
-
-                }
+                >.clickme {}
 
 
-                >p{
+                >p {
 
                     width: 60%;
                 }
@@ -98,15 +97,15 @@ body {
 
                     text-align: center;
 
-                   
+
                     height: 125px;
                     width: 125px;
-              
 
-   
+
+
 
                     padding: 25px;
-     
+
 
                 }
 
