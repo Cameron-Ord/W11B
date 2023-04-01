@@ -15,13 +15,27 @@ if(chosen_products === undefined){
     for(let counter = 0; counter <chosen_products.length; counter = counter +1){
 
 
-        product_article.insertAdjacentHTML(`beforeend`, `<h1>${parse_json[counter][`name`]}</h1>`);
+        product_article.insertAdjacentHTML(`beforeend`, 
+        
+        `
+        <article>
+        
+        <h1>${parse_json[counter][`name`]}</h1>
+    
+        <img src="${parse_json[counter][`image_url`]}" width="100px" height="150px">
+        
+        <p>${parse_json[counter][`description`]}</p>
+        
+        <p>${parse_json[counter][`price`]}</p>
+        
+        
+        </article>
+        
+        
+        
+        `);
 
-        product_article.insertAdjacentHTML(`beforeend`, `<img src="${parse_json[counter][`image_url`]}" width="100px" height="150px">`);
 
-        product_article.insertAdjacentHTML(`beforeend`, `<p>${parse_json[counter][`description`]}</p>`);
-
-        product_article.insertAdjacentHTML(`beforeend`, `<p>${parse_json[counter][`price`]}</p>`);
-
+        
     }
 };
